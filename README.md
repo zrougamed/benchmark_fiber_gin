@@ -10,7 +10,6 @@ benchmark_fiber_gin/
 ├── automated_benchmark.sh       # Main benchmark script
 ├── venv/                       # Python virtual environment (created during setup)
 ├── requirements.txt            # Python dependencies
-├── analyze_results.py          # Results analysis script
 └── servers/
     ├── fiber/
     │   ├── fiber_v3.go         # Fiber v3 server
@@ -92,15 +91,6 @@ chmod +x automated_benchmark.sh
 
 # Or run with custom settings
 DURATION=30s CONNECTIONS=50 ./automated_benchmark.sh
-```
-
-### 5. Analyze Results
-```bash
-# Analyze the most recent results
-python analyze_results.py
-
-# Or analyze specific results directory
-python analyze_results.py results_20250902_123456
 ```
 
 ## Configuration Options
