@@ -306,7 +306,7 @@ def main():
     endpoints = set()
     
     for file_path in result_files:
-        if '_' in Path(file_path).stem amd not file_path.endswith('benchmark_comparison.txt'):
+        if '_' in Path(file_path).stem and not file_path.endswith('benchmark_comparison.txt'):
             server, endpoint = Path(file_path).stem.split('_', 1)
             servers.add(server)
             endpoints.add(endpoint)
